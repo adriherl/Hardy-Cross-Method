@@ -113,7 +113,8 @@ def iteration():
         for k in circuit2:
             pipes_prop[k][3] = pipes_prop[k][3] + delta2
 
-while delta1 >= 0.1 or delta2 >= 0.1:
+#Diiterasi sampai delta dengan keakuratan 0.01
+while delta1 >= 0.01 or delta2 >= 0.01:
     iteration()
     
 for i in hasil:
